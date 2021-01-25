@@ -1,0 +1,46 @@
+.input-wrap{
+    display: flex;
+    align-items: center;
+    padding:0 10px 0 15px;
+    background-color:white;
+    height:60px;
+    line-height: 60px;
+}
+
+.input-left{
+    width:95px;
+}
+
+.input-title{
+    font-family: PingFang SC;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.85px;
+    color: #000000;
+}
+
+.input-right{
+    flex:1;
+}
+
+.input-right > input {
+    border:none;
+    box-shadow: none;
+    outline: none;
+    
+}
+
+.input-right > input::placeholder{
+    opacity: 0.3;
+    font-family: PingFang HK;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #313131;
+}
