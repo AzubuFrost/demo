@@ -5,6 +5,7 @@
     background-color:white;
     height:60px;
     line-height: 60px;
+
 }
 
 .input-left{
@@ -20,6 +21,13 @@
     line-height: normal;
     letter-spacing: 0.85px;
     color: #000000;
+}
+
+.input-title-isrequired{
+    color:red;
+    margin-left: 2px;
+    position: relative;
+    top:3px;
 }
 
 .input-right{

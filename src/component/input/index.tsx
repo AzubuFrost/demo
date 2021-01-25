@@ -10,6 +10,7 @@ type Props = {
   placeholder: string;
   borderBottomStyle?: string;
   additionalElement?: any;
+  disabled?: boolean;
 };
 
 function Input({
@@ -21,6 +22,7 @@ function Input({
   placeholder = "请输入内容",
   borderBottomStyle,
   additionalElement,
+  disabled,
 }: Props) {
   const handleChange = (e: any) => {
     onChange && onChange(e.target.value, field);
@@ -29,7 +31,7 @@ function Input({
     <div className={"input-wrap"} style={{ borderBottom: borderBottomStyle }}>
       <div className="input-left">
         <span className="input-title">{title}</span>
-        {isRequired && <span style={{ color: "red" }}>*</span>}
+        {isRequired && <span className={"input-title-isrequired"}>*</span>}
       </div>
       <div className="input-right">
         <input
@@ -37,6 +39,7 @@ function Input({
           onChange={handleChange}
           value={value}
           placeholder={placeholder}
+          disabled={disabled}
         />
       </div>
       {additionalElement && (
